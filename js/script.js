@@ -10,10 +10,25 @@ console.log('JS OK!');
 * *****************************************/
 console.log('=============== INIT =================');
 
-// Password Element
-const pswElement = document.getElementById('psw-output');
+//###### DOM Elements ######\\
+// First name
+const firstNameElement = document.getElementById('first-name');
+console.log('First Name Element: ' + firstNameElement);
+
+// Last name
+const lastNameElement = document.getElementById('last-name');
+console.log('Last Name Element: ' + lastNameElement);
+
+// Favorite Color
+const colorElement = document.getElementById('fav-color');
+console.log('Favorite Color Element: ' + colorElement);
+
+// Password
+const pswElement = document.getElementById('password');
 console.log('Password Element: ' + pswElement);
 
+
+//###### Manual Inputs ######\\
 // Final String
 const finalString = '21';
 console.log('Final String: ' + finalString);
@@ -46,6 +61,6 @@ console.log('Generated Password: ' + password);
 
 //###### Show Rersult ######\\
 // Update HTML element
-pswElement.innerText += ' ' + password;
+pswElement.innerText = password;
 
 console.log('=============== DONE =================');
