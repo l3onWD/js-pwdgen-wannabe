@@ -31,3 +31,7 @@ console.log('First Name: ' + firstName);
 // Get User Last Name
 const lastName = prompt('Qual\'è il tuo cognome?', 'Mazzarella');
 console.log('Last Name: ' + lastName);
+
+// Get User favorite color
+const favColor = prompt('Qual\'è il tuo colore preferito?', 'Blu');
+console.log('Favorite Color: ' + favColor);
