@@ -17,30 +17,44 @@
         <title>Password Generator</title>
         
     </head>
-    <body>
+    <body class="bg-primary">
 
         <div class="container">
 
             <!-- Generator Card -->
-            <div class="card mb-3">
+            <div class="generator-card card mb-3">
                 <div class="row g-0">
+
+                    <!-- Image -->
                     <div class="col-md-4">
                         <img src="https://picsum.photos/id/3/700" class="img-fluid rounded-start" alt="Man with a Smartphone">
                     </div>
+
+                    <!-- Content -->
                     <div class="col-md-8">
                         <div class="card-body">
 
-                            <h4 class="card-title">Password Generator</h4>
+                            <h4 class="card-title mb-4">Password Generator</h4>
 
-                            <p><strong>Nome: </strong><span>Vincenzo</span></p>
+                            <!-- First Name data -->
+                            <div class="bg-secondary p-2 mb-3 rounded">
+                                <strong>Nome: </strong><span id="first-name"></span>
+                            </div>
 
-                            <p><strong>Cognome: </strong><span>Mazzarella</span></p>
+                            <!-- Last Name data -->
+                            <div class="bg-secondary p-2 mb-3 rounded">
+                                <strong>Cognome: </strong><span id="last-name"></span>
+                            </div>
 
-                            <p><strong>Colore Preferito: </strong><span>Blu</span></p>
+                            <!-- Favorite Color data -->
+                            <div class="bg-secondary p-2 mb-3 rounded">
+                                <strong>Colore Preferito: </strong><span id="fav-color"></span>
+                            </div>
 
-
-                            <div class="border rounded">
-                                <p id="psw-output">La tua password è: </p>
+                            <!-- Password Generated -->
+                            <div class="bg-white text-dark p-2 rounded">
+                                <strong>La tua password è: </strong>
+                                <p id="password" class="h3 text-center">test</p>
                             </div>
                                 
 
