@@ -22,7 +22,7 @@ body {
 /* *****************************************
 * Generator Card
 * *****************************************/
-.generator-card {
+.generator .card {
     background-color: var(--col-darkblue);
 }
 
