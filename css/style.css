@@ -3,6 +3,7 @@
 * *****************************************/
 :root {
     --col-darkblue: #0a0e31;
+    --gr-darkblue: rgba(10,14,49,1) 0%, transparent 10%;
 }
 
 
@@ -36,13 +37,42 @@ body {
     overflow: hidden;
 }
 
+/* Card Image */
 .generator img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
+/* Image Overlay */
+.generator .overlay {
+    position: relative;
+}
+
+.generator .overlay::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-image: linear-gradient(180deg, var(--gr-darkblue));
+}
+
 
 /* **********************************************************************************
 ? RESPONSIVE
 * ***********************************************************************************/
+
+/* Media MD*/
+@media screen and (min-width: 768px) {
+
+    /* *****************************************
+    * Generator
+    * *****************************************/
+    .generator .overlay::after {
+        background-image: linear-gradient(90deg, var(--gr-darkblue));
+    }
+}
