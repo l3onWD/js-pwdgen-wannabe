@@ -42,3 +42,10 @@ console.log('Favorite Color: ' + favColor);
 // Concatenate strings
 const password = firstName + lastName + favColor + finalString;
 console.log('Generated Password: ' + password);
+
+
+//###### Show Rersult ######\\
+// Update HTML element
+pswElement.innerText += ' ' + password;
+
+console.log('=============== DONE =================');
