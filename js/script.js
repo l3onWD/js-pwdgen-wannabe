@@ -10,6 +10,7 @@ console.log('JS OK!');
 * *****************************************/
 console.log('=============== INIT =================');
 
+
 //###### DOM Elements ######\\
 // First name
 const firstNameElement = document.getElementById('first-name');
@@ -24,14 +25,14 @@ const favColorElement = document.getElementById('fav-color');
 console.log('Favorite Color Element: ' + favColorElement);
 
 // Password
-const pswElement = document.getElementById('password');
-console.log('Password Element: ' + pswElement);
+const passwordElement = document.getElementById('password');
+console.log('Password Element: ' + passwordElement);
 
 
 //###### Manual Inputs ######\\
 // Final String
-const finalString = '21';
-console.log('Final String: ' + finalString);
+const finalStringInput = '21';
+console.log('Final String: ' + finalStringInput);
 
 
 /* *****************************************
@@ -39,38 +40,39 @@ console.log('Final String: ' + finalString);
 * *****************************************/
 console.log('=============== LOGIC =================');
 
+
 //###### User Input ######\\
 // Get User First Name
-const firstName = prompt('Qual\'è il tuo nome?', 'Vincenzo');
-console.log('First Name: ' + firstName);
+const firstNameInput = prompt('Qual\'è il tuo nome?', 'Vincenzo');
+console.log('First Name: ' + firstNameInput);
 
 // Get User Last Name
-const lastName = prompt('Qual\'è il tuo cognome?', 'Mazzarella');
-console.log('Last Name: ' + lastName);
+const lastNameInput = prompt('Qual\'è il tuo cognome?', 'Mazzarella');
+console.log('Last Name: ' + lastNameInput);
 
 // Get User favorite color
-const favColor = prompt('Qual\'è il tuo colore preferito?', 'Blu');
-console.log('Favorite Color: ' + favColor);
+const favColorInput = prompt('Qual\'è il tuo colore preferito?', 'Blu');
+console.log('Favorite Color: ' + favColorInput);
 
 
 //###### Generate Password ######\\
 // Concatenate strings
-const password = firstName + lastName + favColor + finalString;
+const password = firstNameInput + lastNameInput + favColorInput + finalStringInput;
 console.log('Generated Password: ' + password);
 
 
 //###### Show Rersult ######\\
 // Update first name
-firstNameElement.innerText = firstName;
+firstNameElement.innerText = firstNameInput;
 
 // Update last name
-lastNameElement.innerText = lastName;
+lastNameElement.innerText = lastNameInput;
 
 // Update favorite color
-favColorElement.innerText = favColor;
+favColorElement.innerText = favColorInput;
 
 // Update password
-pswElement.innerText = password;
+passwordElement.innerText = password;
 
 
 console.log('=============== DONE =================');
