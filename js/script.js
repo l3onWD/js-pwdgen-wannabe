@@ -1,12 +1,12 @@
 /* *****************************************
-! Debug
+! DEBUG
 * *****************************************/
 // Check if file is linked to the HTML
 console.log('JS OK!');
 
 
 /* *****************************************
-* Init
+* INIT
 * *****************************************/
 console.log('=============== INIT =================');
 
@@ -20,10 +20,11 @@ console.log('Final String: ' + finalString);
 
 
 /* *****************************************
-* Logic
+* LOGIC
 * *****************************************/
 console.log('=============== LOGIC =================');
 
+//###### User Input ######\\
 // Get User First Name
 const firstName = prompt('Qual\'è il tuo nome?', 'Vincenzo');
 console.log('First Name: ' + firstName);
@@ -35,3 +36,9 @@ console.log('Last Name: ' + lastName);
 // Get User favorite color
 const favColor = prompt('Qual\'è il tuo colore preferito?', 'Blu');
 console.log('Favorite Color: ' + favColor);
+
+
+//###### Generate Password ######\\
+// Concatenate strings
+const password = firstName + lastName + favColor + finalString;
+console.log('Generated Password: ' + password);
