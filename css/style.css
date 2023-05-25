@@ -20,10 +20,19 @@ body {
 * ***********************************************************************************/
 
 /* *****************************************
-* Generator Card
+* Generator
 * *****************************************/
+.generator {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .generator .card {
     background-color: var(--col-darkblue);
+    border: none;
+    box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 
