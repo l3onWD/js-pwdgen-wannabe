@@ -20,8 +20,8 @@ const lastNameElement = document.getElementById('last-name');
 console.log('Last Name Element: ' + lastNameElement);
 
 // Favorite Color
-const colorElement = document.getElementById('fav-color');
-console.log('Favorite Color Element: ' + colorElement);
+const favColorElement = document.getElementById('fav-color');
+console.log('Favorite Color Element: ' + favColorElement);
 
 // Password
 const pswElement = document.getElementById('password');
@@ -60,7 +60,17 @@ console.log('Generated Password: ' + password);
 
 
 //###### Show Rersult ######\\
-// Update HTML element
+// Update first name
+firstNameElement.innerText = firstName;
+
+// Update last name
+lastNameElement.innerText = lastName;
+
+// Update favorite color
+favColorElement.innerText = favColor;
+
+// Update password
 pswElement.innerText = password;
+
 
 console.log('=============== DONE =================');
