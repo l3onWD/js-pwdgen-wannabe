@@ -27,3 +27,7 @@ console.log('=============== LOGIC =================');
 // Get User First Name
 const firstName = prompt('Qual\'è il tuo nome?', 'Vincenzo');
 console.log('First Name: ' + firstName);
+
+// Get User Last Name
+const lastName = prompt('Qual\'è il tuo cognome?', 'Mazzarella');
+console.log('Last Name: ' + lastName);
