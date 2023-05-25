@@ -24,3 +24,6 @@ console.log('Final String: ' + finalString);
 * *****************************************/
 console.log('=============== LOGIC =================');
 
+// Get User First Name
+const firstName = prompt('Qual\'è il tuo nome?', 'Vincenzo');
+console.log('First Name: ' + firstName);
