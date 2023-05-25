@@ -1,7 +1,8 @@
 /* *****************************************
 * Init
 * *****************************************/
-
+const pswElement = document.getElementById('psw-output');
+console.log(pswElement);
 
 
 /* *****************************************
